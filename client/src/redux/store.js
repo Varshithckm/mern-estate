@@ -22,3 +22,5 @@ export const store = configureStore({
 })
 
 export const persistor = persistStore(store);
+
+//persist is used to save the stored state even after the page is refreshed

@@ -16,6 +16,10 @@ const userSchema = new mongoose.Schema({
         required:true,
         
     },
+    avatar:{
+        type:String,
+        default:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fprofile-image&psig=AOvVaw1mjHMPlWQu9YLflzfylhDF&ust=1712975872993000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLjm0dfSu4UDFQAAAAAdAAAAABAK"
+    }
 },{timestamps:true});
 
 const User = mongoose.model('User',userSchema);
